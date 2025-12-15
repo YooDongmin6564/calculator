@@ -6,7 +6,7 @@ typedef int Item;
 typedef struct stack {
 Item * contents;
 int top;
-int size;
+int size; //스택에 입력 가능한 크기
 } Stack;
 
 Stack * create_stack(int initial_size);
@@ -18,4 +18,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
